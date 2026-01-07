@@ -5,29 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 2</title>
-    <link rel="stylesheet" crossorigin href="/equin-pilot/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/equin-pilot/assets/styles-5LexsBze.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
+  <div class="container header__container">
+    <a href="/" class="logo">
+      <span class="logo__icon"></span>
+      <span class="logo__text">Equin-Pilot</span>
+    </a>
+
     <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+      <ul class="nav__list">
+        <li><a href="#" class="nav__link active">Главная</a></li>
+        <li><a href="#about" class="nav__link">О платформе</a></li>
+        <li><a href="#features" class="nav__link">Преимущества</a></li>
+        <li><a href="#innovations" class="nav__link">Инновации</a></li>
+        <li><a href="#blog" class="nav__link">Обучение</a></li>
       </ul>
     </nav>
+
+    <a href="#contact" class="btn btn--outline header__btn">Связаться</a>
+
+    <button class="burger" aria-label="Menu">
+      <span></span>
+    </button>
   </div>
 </header>
-
 
     <main>
       <div class="container">
@@ -38,20 +42,64 @@
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
+  <div class="container footer__grid">
+    <div class="footer__col">
+      <a href="/" class="logo footer__logo">
+        <span class="logo__icon"></span>
+        <span class="logo__text">Equin-Pilot</span>
       </a>
-    </p>
+      <p class="footer__description">
+        Инновационная технология обучения, меняющая правила игры в IT-индустрии. Постройте карьеру, которая работает на
+        вас.
+      </p>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Меню</h4>
+      <ul class="footer__links">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#about">О платформе</a></li>
+        <li><a href="#features">Преимущества</a></li>
+        <li><a href="#innovations">Инновации</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Юридическая информация</h4>
+      <ul class="footer__links">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="cookies.html">Cookie Policy</a></li>
+        <li><a href="return.html">Return Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="personal-data-policy.html">Data Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Контакты</h4>
+      <ul class="footer__contact-list">
+        <li>
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+33142685300">+33 1 42 68 53 00</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:hello@equin-pilot.fit">hello@equin-pilot.fit</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-location-dot"></i>
+          <span>12 Rue de la Paix, 75002 Paris, France</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="footer__bottom">
+      <p>&copy; 2026 Equin-Pilot. Платформа года. Все права защищены.</p>
+    </div>
   </div>
 </footer>
-
   </body>
 </html>
