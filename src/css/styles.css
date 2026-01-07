@@ -1163,3 +1163,105 @@ ul {
         bottom: 15px;
     }
 }
+/* Стили для юридических страниц */
+.pages {
+    padding: 160px 0 100px;
+    /* Большой отступ сверху для хедера */
+    background: radial-gradient(circle at top right, rgba(112, 0, 255, 0.05), transparent 400px);
+}
+
+.page-title {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin-bottom: 40px;
+    line-height: 1.1;
+}
+
+.pages__content {
+    max-width: 900px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    padding: 50px;
+    border-radius: 32px;
+    backdrop-filter: blur(10px);
+}
+
+.pages__content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 25px;
+}
+
+.pages__content h2 {
+    font-size: 1.8rem;
+    color: var(--accent-color);
+    margin: 45px 0 20px;
+}
+
+.pages__content ul {
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.pages__content li {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 15px;
+    position: relative;
+    list-style: none;
+}
+
+.pages__content li::before {
+    content: '→';
+    position: absolute;
+    left: -25px;
+    color: var(--accent-color);
+}
+
+.pages__content strong {
+    color: #fff;
+    font-weight: 600;
+}
+
+.page-link {
+    color: var(--accent-color);
+    text-decoration: underline;
+    transition: var(--transition);
+}
+
+.page-link:hover {
+    color: var(--secondary-color);
+    text-shadow: 0 0 10px var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .pages {
+        padding-top: 120px;
+    }
+
+    .pages__content {
+        padding: 30px 20px;
+    }
+}
+/* Добавьте это в ваш блок стилей для страниц (pages), если хотите больше акцентов */
+.pages__content p strong {
+    color: var(--accent-color);
+    /* Выделяем ключевые заголовки внутри текста нашим фирменным цветом */
+    font-family: 'Syne', sans-serif;
+    letter-spacing: 0.5px;
+    display: block;
+    /* Делаем заголовок параграфа отдельной строкой для читабельности */
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+/* Эффект свечения при наведении на блок контента */
+.pages__content {
+    transition: var(--transition);
+}
+
+.pages__content:hover {
+    border-color: rgba(0, 242, 255, 0.3);
+    box-shadow: 0 0 40px rgba(0, 242, 255, 0.05);
+}
